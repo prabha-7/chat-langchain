@@ -21,7 +21,7 @@ module "chat_langchain_backend" {
   region                      = local.region
   chat_langchain_backend_name = "chat-langchain-backend"
   domain_name                 = "YOUR DOMAIN NAME"
-  image_tag                   = "docker.io/langchain/chat-langchain-backend:0.0.1"
+  image_tag                   = "docker.io/prabhakaranmails/chat-langchain-backend:0.0.1"
   openai_api_key              = local.secret_json["openai_api_key"]
   weaviate_api_key            = local.secret_json["weaviate_api_key"]
   weaviate_url                = local.secret_json["weaviate_url"]
